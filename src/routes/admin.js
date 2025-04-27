@@ -32,7 +32,7 @@ router.put('/games/:gameId', auth, adminAuth, adminController.updateGame);
 router.post('/games', auth, adminAuth, adminController.createGame);
 
 // Create or update tournament
-router.put('/tournaments/:tournamentId?', auth, adminAuth, adminController.updateTournament);
+router.put('/tournaments/:tournamentId', auth, adminAuth, adminController.updateTournament);
 
 // Award coins to user
 router.post('/award-coins', auth, adminAuth, adminController.awardCoins);
